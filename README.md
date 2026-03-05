@@ -36,16 +36,42 @@ Instagram Reels is now the 8th signal source. TikTok and Instagram both run on S
 
 ## Installation
 
-```bash
-# Clone the repo
-git clone https://github.com/mvanhorn/last30days-skill.git ~/.claude/skills/last30days
+### From the Plugin Marketplace (recommended)
+
+Add the marketplace source and install:
+
 ```
+/plugin marketplace add phjlljp/last30days
+/plugin install last30days
+```
+
+Then run `/last30days-setup` to configure your API keys.
+
+> **Tip:** For the best experience, install locally so you can pin a version and update on your own schedule.
+
+### Manual Install
+
+```bash
+git clone https://github.com/phjlljp/last30days.git ~/.claude/skills/last30days
+```
+
+### Local Development
+
+Clone the repo, then point Claude Code at the local directory:
+
+```bash
+git clone https://github.com/phjlljp/last30days.git ~/dev/last30days-skill
+/plugin marketplace add ~/dev/last30days-skill
+/plugin install last30days
+```
+
+After making changes, run `/reload-plugins` to pick them up. Useful for contributing PRs or customizing the pipeline for your own use.
 
 ### Configuration
 
 **Option A: Per-project setup (recommended)**
 
-Run `/last30days-setup` in any project to create `.claude/last30days.local.md` with your API keys. This is the plugin-native approach — keys are per-project, gitignored, and restricted to owner-only access (`chmod 600`).
+Run `/last30days-setup` in any project to create `.claude/last30days.local.md` with your API keys. Keys are per-project and gitignored.
 
 **Option B: Manual per-project config**
 
@@ -60,9 +86,6 @@ AUTH_TOKEN: "..."
 CT0: "..."
 ---
 ```
-```bash
-chmod 600 .claude/last30days.local.md
-```
 
 **Option C: Global config file**
 
@@ -75,7 +98,6 @@ XAI_API_KEY=xai-...        # optional — cookie auth is default for X search
 AUTH_TOKEN=...             # optional — X cookie auth
 CT0=...                    # optional — X cookie auth
 EOF
-chmod 600 ~/.config/last30days/.env
 ```
 
 **Option D: Environment variables**
@@ -119,7 +141,7 @@ node ~/.claude/skills/last30days/scripts/lib/vendor/bird-search/bird-search.mjs 
 This skill also works in OpenAI Codex CLI. Install to the Codex skills directory instead:
 
 ```bash
-git clone https://github.com/mvanhorn/last30days-skill.git ~/.agents/skills/last30days
+git clone https://github.com/phjlljp/last30days.git ~/.agents/skills/last30days
 ```
 
 Same SKILL.md, same Python engine, same scripts. The `agents/openai.yaml` provides Codex-specific discovery metadata. Invoke with `$last30days` or through the `/skills` menu.
@@ -611,7 +633,7 @@ Then: a prompt card slides in showing a sample output.
 SCENE 5 (40-50s): Call to Action
 Zoom out slightly. Everything fades except the logo.
 Text animates in: "Research any topic. Get prompts that work."
-GitHub icon + "github.com/mvanhorn/last30days-skill"
+GitHub icon + "github.com/phjlljp/last30days"
 Tagline: "A Claude Code Skill"
 
 STYLE NOTES:

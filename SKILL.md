@@ -4,8 +4,8 @@ version: "2.9.1"
 description: "Research a topic from the last 30 days. Also triggered by 'last30'. Sources: Reddit, X, YouTube, TikTok, Instagram, Hacker News, Polymarket, web. Become an expert and write copy-paste-ready prompts."
 argument-hint: 'last30 AI video tools, last30 best project management tools'
 allowed-tools: Bash, Read, Write, AskUserQuestion, WebSearch
-homepage: https://github.com/mvanhorn/last30days-skill
-repository: https://github.com/mvanhorn/last30days-skill
+homepage: https://github.com/phjlljp/last30days
+repository: https://github.com/phjlljp/last30days
 author: mvanhorn
 license: MIT
 user-invocable: true
@@ -30,7 +30,7 @@ metadata:
     primaryEnv: SCRAPECREATORS_API_KEY
     files:
       - "scripts/*"
-    homepage: https://github.com/mvanhorn/last30days-skill
+    homepage: https://github.com/phjlljp/last30days
     tags:
       - research
       - reddit
