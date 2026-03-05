@@ -11,6 +11,7 @@ variants/open/references/research.md
 # OS / tool files
 .DS_Store
 .claude/
+*.local.md
 .entire/
 __pycache__/
 *.pyc

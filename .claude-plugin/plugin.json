@@ -1,12 +1,12 @@
 {
   "name": "last30days",
-  "description": "Research any topic from the last 30 days across Reddit, X, YouTube, and the web",
+  "description": "Research any topic from the last 30 days across Reddit, X, YouTube, TikTok, Instagram, Hacker News, Polymarket, and the web",
   "version": "2.9.1",
   "author": {
     "name": "mvanhorn"
   },
-  "repository": "https://github.com/mvanhorn/last30days-skill",
+  "repository": "https://github.com/phjlljp/last30days",
   "license": "MIT",
-  "keywords": ["research", "reddit", "twitter", "x", "youtube", "trends", "prompts"],
+  "keywords": ["research", "reddit", "twitter", "x", "youtube", "tiktok", "instagram", "hackernews", "polymarket", "trends", "prompts"],
   "skills": ["./"]
 }

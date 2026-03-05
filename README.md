@@ -39,16 +39,52 @@ Instagram Reels is now the 8th signal source. TikTok and Instagram both run on S
 ```bash
 # Clone the repo
 git clone https://github.com/mvanhorn/last30days-skill.git ~/.claude/skills/last30days
+```
 
-# Add your API keys (optional if signed in to Codex)
+### Configuration
+
+**Option A: Per-project setup (recommended)**
+
+Run `/last30days-setup` in any project to create `.claude/last30days.local.md` with your API keys. This is the plugin-native approach — keys are per-project, gitignored, and restricted to owner-only access (`chmod 600`).
+
+**Option B: Manual per-project config**
+
+Create `.claude/last30days.local.md` in your project root:
+
+```markdown
+---
+OPENAI_API_KEY: "sk-..."
+XAI_API_KEY: "xai-..."
+SCRAPECREATORS_API_KEY: "..."
+AUTH_TOKEN: "..."
+CT0: "..."
+---
+```
+```bash
+chmod 600 .claude/last30days.local.md
+```
+
+**Option C: Global config file**
+
+```bash
 mkdir -p ~/.config/last30days
 cat > ~/.config/last30days/.env << 'EOF'
 SCRAPECREATORS_API_KEY=... # Reddit + TikTok + Instagram (one key, all three) — scrapecreators.com
 OPENAI_API_KEY=sk-...      # optional — legacy Reddit fallback if using `codex login`
 XAI_API_KEY=xai-...        # optional — cookie auth is default for X search
+AUTH_TOKEN=...             # optional — X cookie auth
+CT0=...                    # optional — X cookie auth
 EOF
 chmod 600 ~/.config/last30days/.env
 ```
+
+**Option D: Environment variables**
+
+```bash
+export OPENAI_API_KEY=sk-...
+```
+
+**Priority order:** Environment variables > `.claude/last30days.local.md` > `~/.config/last30days/.env`
 
 If you're signed in to Codex (`codex login`), the skill will use your Codex credentials for the OpenAI Responses API and you can omit `OPENAI_API_KEY`. If you're not signed in, run `codex login` first.
 
@@ -62,11 +98,14 @@ X search reads your existing browser cookies  - no API keys or login commands ne
 
 **Firefox:** Just be logged into x.com. No setup needed.
 
-**Manual fallback:** If cookie auto-detection doesn't work, set these env vars (grab them from your browser's dev tools → Application → Cookies → x.com):
-```bash
-export AUTH_TOKEN=your_auth_token
-export CT0=your_ct0_token
+**Manual fallback:** If cookie auto-detection doesn't work (e.g. WSL2, headless servers, or persistent Keychain prompts), add your X credentials to `.claude/last30days.local.md` (or `~/.config/last30days/.env`):
 ```
+AUTH_TOKEN: "your_auth_token"
+CT0: "your_ct0_token"
+```
+Grab both values from your browser's dev tools → Application → Cookies → x.com. The per-project `.local.md` file or global `.env` file is the recommended approach for headless environments since it persists across sessions and avoids repeated Keychain prompts on macOS.
+
+You can also set them as environment variables (`export AUTH_TOKEN=...`), which takes highest precedence.
 
 **Verify it's working:**
 ```bash
@@ -117,11 +156,11 @@ The open variant adds four modes on top of one-shot research:
 
 Both variants use the same Python engine and scripts directory. The open variant adds command routing (`watch`, `briefing`, `history`) and references mode-specific instruction files.
 
-**Optional web search API keys** (add to `~/.config/last30days/.env`):
-```bash
-PARALLEL_API_KEY=...    # Parallel AI (preferred  - LLM-optimized results)
-BRAVE_API_KEY=...       # Brave Search (free tier: 2,000 queries/month)
-OPENROUTER_API_KEY=...  # OpenRouter/Perplexity Sonar Pro
+**Optional web search API keys** (add to `.claude/last30days.local.md` or `~/.config/last30days/.env`):
+```
+PARALLEL_API_KEY: "..."    # Parallel AI (preferred - LLM-optimized results)
+BRAVE_API_KEY: "..."       # Brave Search (free tier: 2,000 queries/month)
+OPENROUTER_API_KEY: "..."  # OpenRouter/Perplexity Sonar Pro
 ```
 
 Check source availability: `python3 scripts/last30days.py --diagnose`
@@ -897,7 +936,7 @@ This example shows /last30days discovering **emerging developer workflows** - re
 
 - **OpenAI API key** - For Reddit research (uses web search via Responses API)
 - **Node.js 22+** - For X search (bundled Twitter GraphQL client)
-- **X session** - Be logged into x.com in your browser, or set `AUTH_TOKEN`/`CT0` env vars
+- **X session** - Be logged into x.com in your browser, or add `AUTH_TOKEN`/`CT0` to `.claude/last30days.local.md` (or `~/.config/last30days/.env`, or set as env vars)
 - **xAI API key** (optional fallback) - If the bundled search can't authenticate, falls back to xAI's Grok API
 - **yt-dlp** (optional) - For YouTube search + transcript extraction. Install via `brew install yt-dlp` or `pip install yt-dlp`. When present, automatically searches YouTube and extracts video transcripts as an additional source.
 
@@ -1008,9 +1047,7 @@ Search "AI tools" and you get:
 
 Both TikTok and Instagram are powered by [ScrapeCreators](https://scrapecreators.com) — one API key covers both sources. 100 free credits, then pay-as-you-go.
 
-```bash
-echo 'SCRAPECREATORS_API_KEY=your_key_here' >> ~/.config/last30days/.env
-```
+Add `SCRAPECREATORS_API_KEY: "your_key_here"` to `.claude/last30days.local.md`, or run `/last30days-setup` to configure interactively.
 
 **Migrating from Apify?** Replace `APIFY_API_TOKEN` with `SCRAPECREATORS_API_KEY` in your config. The old key is no longer used.
 ---
@@ -1167,7 +1204,7 @@ Your research topic is included in all outbound API requests. If you research se
 
 ### Data stored locally
 
-- API keys: `~/.config/last30days/.env` (chmod 600 recommended)
+- API keys: `.claude/last30days.local.md` (per-project, chmod 600) or `~/.config/last30days/.env` (global, chmod 600)
 - Watchlist database: `~/.local/share/last30days/research.db` (SQLite)
 - Briefings: `~/.local/share/last30days/briefs/`
 

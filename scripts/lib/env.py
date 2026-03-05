@@ -47,11 +47,65 @@ class OpenAIAuth:
     codex_auth_file: str
 
 
-def load_env_file(path: Path) -> Dict[str, str]:
-    """Load environment variables from a file."""
+def _check_file_permissions(path: Path) -> None:
+    """Warn to stderr if a secrets file has overly permissive permissions."""
+    try:
+        mode = path.stat().st_mode
+        # Check if group or other can read (bits 0o044)
+        if mode & 0o044:
+            import sys
+            sys.stderr.write(
+                f"[last30days] WARNING: {path} is readable by other users. "
+                f"Run: chmod 600 {path}\n"
+            )
+            sys.stderr.flush()
+    except OSError:
+        pass
+
+
+def load_local_md(path: Path) -> Dict[str, str]:
+    """Load settings from a .local.md file with YAML frontmatter.
+
+    Parses the YAML block between --- markers and returns key-value pairs.
+    Only reads the frontmatter; the markdown body is ignored.
+    """
     env = {}
     if not path.exists():
         return env
+    _check_file_permissions(path)
+    try:
+        text = path.read_text()
+    except OSError:
+        return env
+    # Must start with ---
+    if not text.startswith('---'):
+        return env
+    # Find closing ---
+    end = text.find('\n---', 3)
+    if end == -1:
+        return env
+    frontmatter = text[4:end]  # skip opening "---\n"
+    for line in frontmatter.splitlines():
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+        if ':' in line:
+            key, _, value = line.partition(':')
+            key = key.strip()
+            value = value.strip()
+            if value and value[0] in ('"', "'") and len(value) > 1 and value[-1] == value[0]:
+                value = value[1:-1]
+            if key and value:
+                env[key] = value
+    return env
+
+
+def load_env_file(path: Path) -> Dict[str, str]:
+    """Load environment variables from a .env file."""
+    env = {}
+    if not path or not path.exists():
+        return env
+    _check_file_permissions(path)
 
     with open(path, 'r') as f:
         for line in f:
@@ -178,14 +232,40 @@ def get_openai_auth(file_env: Dict[str, str]) -> OpenAIAuth:
     )
 
 
+def _find_local_md() -> Optional[Path]:
+    """Find .claude/last30days.local.md by walking up from cwd."""
+    cwd = Path.cwd()
+    for parent in [cwd, *cwd.parents]:
+        candidate = parent / '.claude' / 'last30days.local.md'
+        if candidate.exists():
+            return candidate
+        # Stop at filesystem root or home
+        if parent == Path.home() or parent == parent.parent:
+            break
+    return None
+
+
 def get_config() -> Dict[str, Any]:
-    """Load configuration from ~/.config/last30days/.env and environment."""
-    # Load from config file first (if configured)
+    """Load configuration from multiple sources.
+
+    Priority (highest wins):
+      1. Environment variables (os.environ)
+      2. .claude/last30days.local.md (plugin-native, per-project)
+      3. ~/.config/last30days/.env (legacy global config)
+    """
+    # Load from legacy config file
     file_env = load_env_file(CONFIG_FILE) if CONFIG_FILE else {}
 
-    openai_auth = get_openai_auth(file_env)
+    # Load from plugin-native .local.md (overrides legacy)
+    local_md_path = _find_local_md()
+    local_md_env = load_local_md(local_md_path) if local_md_path else {}
 
-    # Build config: Codex/OpenAI auth + process.env > .env file
+    # Merge: local_md overrides file_env
+    merged_file_env = {**file_env, **local_md_env}
+
+    openai_auth = get_openai_auth(merged_file_env)
+
+    # Build config: Codex/OpenAI auth + process.env > .local.md > .env file
     config = {
         'OPENAI_API_KEY': openai_auth.token,
         'OPENAI_AUTH_SOURCE': openai_auth.source,
@@ -211,14 +291,26 @@ def get_config() -> Dict[str, Any]:
     ]
 
     for key, default in keys:
-        config[key] = os.environ.get(key) or file_env.get(key, default)
+        config[key] = os.environ.get(key) or merged_file_env.get(key, default)
+
+    # Track which config source was used
+    if local_md_path:
+        config['_CONFIG_SOURCE'] = f'local_md:{local_md_path}'
+    elif CONFIG_FILE and CONFIG_FILE.exists():
+        config['_CONFIG_SOURCE'] = f'env_file:{CONFIG_FILE}'
+    else:
+        config['_CONFIG_SOURCE'] = 'env_only'
 
     return config
 
 
 def config_exists() -> bool:
-    """Check if configuration file exists."""
-    return CONFIG_FILE.exists()
+    """Check if any configuration source exists."""
+    if _find_local_md():
+        return True
+    if CONFIG_FILE:
+        return CONFIG_FILE.exists()
+    return False
 
 
 def is_reddit_available(config: Dict[str, Any]) -> bool:
