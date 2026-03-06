@@ -1,0 +1,2049 @@
+{
+  "topic": "test topic",
+  "range": {
+    "from": "2026-02-04",
+    "to": "2026-03-06"
+  },
+  "generated_at": "2026-03-06T23:25:51.458691+00:00",
+  "mode": "both",
+  "openai_model_used": "gpt-5.2",
+  "xai_model_used": null,
+  "reddit": [
+    {
+      "id": "R1",
+      "title": "Best practices for Claude Code skills - comprehensive guide",
+      "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills",
+      "subreddit": "ClaudeAI",
+      "date": "2024-01-16",
+      "date_confidence": "low",
+      "engagement": {
+        "score": 847,
+        "num_comments": 156,
+        "upvote_ratio": 0.94
+      },
+      "top_comments": [
+        {
+          "score": 234,
+          "date": "2024-01-16",
+          "author": "skill_expert",
+          "excerpt": "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment1/"
+        },
+        {
+          "score": 189,
+          "date": "2024-01-16",
+          "author": "claude_dev",
+          "excerpt": "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment2/"
+        },
+        {
+          "score": 145,
+          "date": "2024-01-16",
+          "author": "ai_builder",
+          "excerpt": "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment3/"
+        },
+        {
+          "score": 98,
+          "date": "2024-01-16",
+          "author": "dev_tips",
+          "excerpt": "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment4/"
+        },
+        {
+          "score": 76,
+          "date": "2024-01-16",
+          "author": "code_writer",
+          "excerpt": "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment5/"
+        },
+        {
+          "score": 65,
+          "date": "2024-01-16",
+          "author": "security_minded",
+          "excerpt": "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment6/"
+        },
+        {
+          "score": 52,
+          "date": "2024-01-16",
+          "author": "helpful_user",
+          "excerpt": "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment7/"
+        },
+        {
+          "score": 34,
+          "date": "2024-01-16",
+          "author": "newbie_coder",
+          "excerpt": "This is exactly what I needed. Starting my first skill this weekend!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment8/"
+        }
+      ],
+      "comment_insights": [
+        "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+        "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+        "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+        "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+        "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+        "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+        "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills."
+      ],
+      "relevance": 0.95,
+      "why_relevant": "Detailed discussion of skill creation patterns and best practices",
+      "subs": {
+        "relevance": 0,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 0
+    },
+    {
+      "id": "R2",
+      "title": "How I built a research skill for Claude Code",
+      "url": "https://reddit.com/r/ClaudeAI/comments/def456/how_i_built_a_research_skill",
+      "subreddit": "ClaudeAI",
+      "date": "2024-01-16",
+      "date_confidence": "low",
+      "engagement": {
+        "score": 847,
+        "num_comments": 156,
+        "upvote_ratio": 0.94
+      },
+      "top_comments": [
+        {
+          "score": 234,
+          "date": "2024-01-16",
+          "author": "skill_expert",
+          "excerpt": "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment1/"
+        },
+        {
+          "score": 189,
+          "date": "2024-01-16",
+          "author": "claude_dev",
+          "excerpt": "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment2/"
+        },
+        {
+          "score": 145,
+          "date": "2024-01-16",
+          "author": "ai_builder",
+          "excerpt": "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment3/"
+        },
+        {
+          "score": 98,
+          "date": "2024-01-16",
+          "author": "dev_tips",
+          "excerpt": "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment4/"
+        },
+        {
+          "score": 76,
+          "date": "2024-01-16",
+          "author": "code_writer",
+          "excerpt": "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment5/"
+        },
+        {
+          "score": 65,
+          "date": "2024-01-16",
+          "author": "security_minded",
+          "excerpt": "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment6/"
+        },
+        {
+          "score": 52,
+          "date": "2024-01-16",
+          "author": "helpful_user",
+          "excerpt": "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment7/"
+        },
+        {
+          "score": 34,
+          "date": "2024-01-16",
+          "author": "newbie_coder",
+          "excerpt": "This is exactly what I needed. Starting my first skill this weekend!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment8/"
+        }
+      ],
+      "comment_insights": [
+        "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+        "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+        "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+        "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+        "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+        "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+        "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills."
+      ],
+      "relevance": 0.9,
+      "why_relevant": "Real-world example of building a Claude Code skill with API integrations",
+      "subs": {
+        "relevance": 0,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 0
+    },
+    {
+      "id": "R3",
+      "title": "Claude Code vs Cursor vs Windsurf - January 2026 comparison",
+      "url": "https://reddit.com/r/LocalLLaMA/comments/ghi789/claude_code_vs_cursor_vs_windsurf",
+      "subreddit": "LocalLLaMA",
+      "date": "2024-01-16",
+      "date_confidence": "low",
+      "engagement": {
+        "score": 847,
+        "num_comments": 156,
+        "upvote_ratio": 0.94
+      },
+      "top_comments": [
+        {
+          "score": 234,
+          "date": "2024-01-16",
+          "author": "skill_expert",
+          "excerpt": "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment1/"
+        },
+        {
+          "score": 189,
+          "date": "2024-01-16",
+          "author": "claude_dev",
+          "excerpt": "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment2/"
+        },
+        {
+          "score": 145,
+          "date": "2024-01-16",
+          "author": "ai_builder",
+          "excerpt": "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment3/"
+        },
+        {
+          "score": 98,
+          "date": "2024-01-16",
+          "author": "dev_tips",
+          "excerpt": "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment4/"
+        },
+        {
+          "score": 76,
+          "date": "2024-01-16",
+          "author": "code_writer",
+          "excerpt": "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment5/"
+        },
+        {
+          "score": 65,
+          "date": "2024-01-16",
+          "author": "security_minded",
+          "excerpt": "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment6/"
+        },
+        {
+          "score": 52,
+          "date": "2024-01-16",
+          "author": "helpful_user",
+          "excerpt": "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills.",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment7/"
+        },
+        {
+          "score": 34,
+          "date": "2024-01-16",
+          "author": "newbie_coder",
+          "excerpt": "This is exactly what I needed. Starting my first skill this weekend!",
+          "url": "https://reddit.com/r/ClaudeAI/comments/abc123/best_practices_for_claude_code_skills/comment8/"
+        }
+      ],
+      "comment_insights": [
+        "Great guide! One thing I'd add: always use explicit tool permissions in your SKILL.md. Don't default to allowing everything.",
+        "The context: fork tip is gold. I was wondering why my heavy research skill was slow - it was blocking the main thread!",
+        "For anyone starting out: begin with a simple skill that just runs one bash command. Once that works, build up complexity gradually.",
+        "The --mock flag pattern for testing without API calls is essential. I always build that in from day one now.",
+        "Thanks for sharing! Question: how do you handle API key storage securely in skills?",
+        "I use ~/.config/skillname/.env with chmod 600. Never hardcode keys, and definitely don't commit them!",
+        "The caching pattern you described saved me so much on API costs. 24h TTL is perfect for most research skills."
+      ],
+      "relevance": 0.85,
+      "why_relevant": "Compares Claude Code features including skills system",
+      "subs": {
+        "relevance": 0,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 0
+    }
+  ],
+  "x": [],
+  "web": [],
+  "youtube": [
+    {
+      "id": "XXUBcTZWIzs",
+      "title": "Questions on EVERY TOPIC in the Official Handbook \u2705 ULTIMATE Life in the UK Test Practice 2026 \ud83c\uddec\ud83c\udde7",
+      "url": "https://www.youtube.com/watch?v=XXUBcTZWIzs",
+      "channel_name": "UK Life Prep",
+      "date": "2021-02-21",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 843,
+        "likes": 10820,
+        "views": 466803
+      },
+      "transcript_snippet": "in this video i'll be going through a total of 131 questions covering every topic heading in the official guide in order to give you a good overview of everything you need to know in one single video if you like this video please do give it a thumbs up and subscribe to my channel and if you'd like to learn more about my full life in the uk test course which promises to get you 100 ready in the shortest amount of time possible then head to uk lifeprep.com link in the description below let's jump in before we start i'd like to point out three things firstly i've structured this video so that we work our way through the official handbook and cover a typical question from every topic heading for chapter one the values and principles of the uk we look at one question for chapter two what is the uk we look at one question for chapter three along an illustrious history we look at 49 questions for chapter four a modern thriving society we look at 32 questions and for chapter five the uk government the law in your role we look at 48 questions giving us a total of 131 questions covered my second point is for those of you following along with the official handbook i'd like to highlight that there are a handful of topic headings that i have purposely excluded and you can pause the video to read them here i have excluded these topics as i have hardly ever seen questions on the material under those headings and i want to make sure i am providing you with realistic questions and not just giving you questions for the sake of covering every title my final point is that this video by no means covers every type of question you could get in each topic so you will still need to learn more for example in the chapter a long and illustrious history there is the topic the tutors and stuarts which has the heading religious conflicts this heading contains information on the church of england henry viii the reformation protestantism edward vi and bloody mary and the question i've selected in this video only covers the reformation i've tried my best to cover as much as possible but you should not rely solely on this video i suggest checking out my full life in the uk test course to cover everything you need to know enough housekeeping let's get started for the topic the values and principles in the uk we'll be looking at one the question reads which two responsibilities should you respect as a resident of the uk respect and obey the law go to church every sunday listen to bbc radio or freedom of speech the correct two answers are respect and obey the law and freedom of speech for the topic what is the uk we'll be looking at one question the question reads the united...",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: Questions on EVERY TOPIC in the Official Handbook \u2705 ULTIMATE",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 85
+      },
+      "score": 70
+    },
+    {
+      "id": "g-QacxujplA",
+      "title": "IELTS SPEAKING TEST Topic MUSIC - Full Part 1, part 2, part 3",
+      "url": "https://www.youtube.com/watch?v=g-QacxujplA",
+      "channel_name": " IELTS SHARING ",
+      "date": "2017-08-26",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 84,
+        "likes": 4570,
+        "views": 301782
+      },
+      "transcript_snippet": "today's topic is music one style questions what kind of music do you listen to well I'm a big fan of classical music it doesn't make me very popular with my children their taste in music is completely different and they always want to listen to their favorite rock bands do you play any instruments no I don't I've always wished I'd taken up a musical instrument I'd love to be able to play the guitar but I think I'm a bit tone-deaf so perhaps I'd find it hard have you got any hobbies or interests I'm really into live music and I often go to a lot of music festivals I think a live performance always sounds more exciting than the recorded version as long as the performers can sing in play well of course part-2 style tasks describe your favorite kind of music you should say what kind of music do you like when do you listen to it how does it change your mood music is very important part of every human beings life I like all types of music but my favorite type of music is indie music I like to listen to sad Indian songs because I feel that I can relate to them my life has not worked according to the plan and I have been sad for most part of my life so I think that those songs are made for me I like the Indian songs native language and the music and those songs is very good whenever I am very sad I play the songs so that I could feel better I know it seems weird but I kind of like it when a song is telling my story I also listen to sad songs when I am driving a car and my time is spent in a very good manner I really like the songs in which the piano is played as a matter I also know how to play the piano cell I also play the same tunes on my own piano as I told you earlier that if I am sad I listen to sad songs so that I could become more sad but when I am happy I do not listen to sad songs on the contrary I listen to happy songs which make me more happy so I would say that 10 songs make me more sad whereas as the happy songs make me more happy I recall a day when I was sad and my cousin turned on a rap song and it actually infuriated me and I went out of the room banging the door part three style questions do you think music is giving time goes on no quite the opposite in my opinion music was a lot better back in the day I love music from 60s and 70s there are Myriad's of famous rock band of that time I really like and nowadays almost every pop song sounds boring and dull...",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: IELTS SPEAKING TEST Topic MUSIC - Full Part 1, part 2, part ",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 71
+      },
+      "score": 66
+    },
+    {
+      "id": "UAmnKwMUAes",
+      "title": "My Family Topic for B1 Test UK in 2025",
+      "url": "https://www.youtube.com/watch?v=UAmnKwMUAes",
+      "channel_name": "UK KI LIFE",
+      "date": "2021-07-07",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 65,
+        "likes": 1166,
+        "views": 96606
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: My Family Topic for B1 Test UK in 2025",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 55
+      },
+      "score": 61
+    },
+    {
+      "id": "XVGx_NZ1pJQ",
+      "title": "Neurology - Topic 3 - Sensory aspects of gait including Rombergs test",
+      "url": "https://www.youtube.com/watch?v=XVGx_NZ1pJQ",
+      "channel_name": "UCD Medicine",
+      "date": "2012-12-20",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 8,
+        "likes": 1072,
+        "views": 197046
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: Neurology - Topic 3 - Sensory aspects of gait including Romb",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 55
+      },
+      "score": 61
+    },
+    {
+      "id": "A8dOyNVcqT4",
+      "title": "B1 Test Conversation Topic \u201cMusic\u201d | B1 English Test Trinity College 2024",
+      "url": "https://www.youtube.com/watch?v=A8dOyNVcqT4",
+      "channel_name": "Selective Data",
+      "date": "2023-02-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 23,
+        "likes": 635,
+        "views": 47287
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: B1 Test Conversation Topic \u201cMusic\u201d | B1 English Test Trinity",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 43
+      },
+      "score": 57
+    },
+    {
+      "id": "UwyzCg57dlA",
+      "title": "Topic 3: Pap Test and DNA Probes / Cultures",
+      "url": "https://www.youtube.com/watch?v=UwyzCg57dlA",
+      "channel_name": "Association of Professors of Gynecology and Obstetrics (APGO)",
+      "date": "2015-09-10",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 11,
+        "likes": 274,
+        "views": 103573
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: Topic 3: Pap Test and DNA Probes / Cultures",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 43
+      },
+      "score": 57
+    },
+    {
+      "id": "AhgE_kTx8xU",
+      "title": "'My Topic' test secrets explained! How to Choose 'My Topic' Trinity B1 English GESE exam",
+      "url": "https://www.youtube.com/watch?v=AhgE_kTx8xU",
+      "channel_name": "My English",
+      "date": "2025-09-27",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 43,
+        "likes": 215,
+        "views": 10001
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: 'My Topic' test secrets explained! How to Choose 'My Topic' ",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 27
+      },
+      "score": 53
+    },
+    {
+      "id": "9tNgKjdSBR8",
+      "title": "Trinity B1 English GESE exam topic form (job/career topic). Prepare subtopics, test questions",
+      "url": "https://www.youtube.com/watch?v=9tNgKjdSBR8",
+      "channel_name": "My English",
+      "date": "2025-09-28",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 21,
+        "likes": 129,
+        "views": 6638
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: Trinity B1 English GESE exam topic form (job/career topic). ",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 19
+      },
+      "score": 50
+    },
+    {
+      "id": "39PfYf8NodA",
+      "title": "IELTS Speaking: 8 Useful Techniques for Any Topic",
+      "url": "https://www.youtube.com/watch?v=39PfYf8NodA",
+      "channel_name": "E2 IELTS",
+      "date": "2022-04-27",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 417,
+        "likes": 27945,
+        "views": 932874
+      },
+      "transcript_snippet": "here at E2 one technique that we teach our students when they're preparing for their I speaking test is the ppf method the ppf method involves talking about the past present and future which helps you use complex grammar and gives you ideas for your response in this video I'm going to teach you eight techniques to talk about the past the first p in our speaking ppf method now one of the main criteria for ielt speaking is that you develop your ideas and what we often notice is that students don't do this enough particularly when they're beginning to learn now just before we look at our I speaking part two question don't you forget to like subscribe and comment here's the question you need to describe a movie you enjoyed recently then you need to say what the movie was when you saw it what it was about and describe why you enjoyed this movie so for an I speaking part two question like this you would have one minute to prepare your answer and then two minutes to talk now I was an a examiner for 5 years and this is how I would see students answer speaking part two almost every week so I'm going to describe a movie I enjoyed recently uh the movie is called Toy Story 3 and I saw it a few weeks ago and it's about toys that are alive and I liked it because okay please stop this is not a good response I used to call this the and train students run out of ideas and they keep adding information without any thought they just say and and then they keep going and they say and again and they add more information now it's not wrong and sometimes and is the best word available but if you're aiming for six seven or higher you will need more than this one word but don't worry in this video I'm going to teach you a few ways to avoid the and train and get a higher score the first technique is start with a Time intro a lot of I students will start like this I'm going to talk about a movie that I enjoyed recently the movie is called Toy Story 3 this is not wrong but if you want to get a higher score you'll want to get into the substance of your response faster than JD did here and you can do this with a Time intro a Time intro is a phrase that will help you start part two naturally like how you would if you were in a conversation with a friend or in an interview for example we might start with last week I watched this movie or every Christmas I watch that movie or when I was a kid I loved watching Every Day next year on rainy days so while you're preparing for eye outs you'll want to practice starting this way...",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: IELTS Speaking: 8 Useful Techniques for Any Topic",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 94
+      },
+      "score": 50
+    },
+    {
+      "id": "beSbuJ1_rWQ",
+      "title": "B1 Test UK \"My Country Topic\" for B1 Test Topic 2023",
+      "url": "https://www.youtube.com/watch?v=beSbuJ1_rWQ",
+      "channel_name": "EZ LIFE UK ",
+      "date": "2023-02-12",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 2,
+        "likes": 54,
+        "views": 2977
+      },
+      "transcript_snippet": "",
+      "relevance": 1.0,
+      "why_relevant": "YouTube: B1 Test UK \"My Country Topic\" for B1 Test Topic 2023",
+      "subs": {
+        "relevance": 100,
+        "recency": 0,
+        "engagement": 4
+      },
+      "score": 46
+    },
+    {
+      "id": "CT0dVUtTuwg",
+      "title": "Nail Your 1st Topic in IELTS Speaking",
+      "url": "https://www.youtube.com/watch?v=CT0dVUtTuwg",
+      "channel_name": "Fastrack IELTS",
+      "date": "2024-03-19",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 154,
+        "likes": 4683,
+        "views": 200225
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: Nail Your 1st Topic in IELTS Speaking",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 70
+      },
+      "score": 43
+    },
+    {
+      "id": "LNvLVXVTOpc",
+      "title": "IELTS English Podcast - Speaking Topic: Technology",
+      "url": "https://www.youtube.com/watch?v=LNvLVXVTOpc",
+      "channel_name": "IELTS Plus",
+      "date": "2022-02-09",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 134,
+        "likes": 4441,
+        "views": 145661
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: IELTS English Podcast - Speaking Topic: Technology",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 67
+      },
+      "score": 42
+    },
+    {
+      "id": "bsctJP04dfY",
+      "title": "DET Speaking: How to Answer Any Topic Without Panic",
+      "url": "https://www.youtube.com/watch?v=bsctJP04dfY",
+      "channel_name": "Teacher Luke - Duolingo English Test",
+      "date": "2026-01-15",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 98,
+        "likes": 741,
+        "views": 21216
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: DET Speaking: How to Answer Any Topic Without Panic",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 41
+      },
+      "score": 34
+    },
+    {
+      "id": "iT5dk3nkYfQ",
+      "title": "Top 20 IELTS Speaking Topics with Answers",
+      "url": "https://www.youtube.com/watch?v=iT5dk3nkYfQ",
+      "channel_name": "E2 IELTS",
+      "date": "2022-01-19",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 823,
+        "likes": 36140,
+        "views": 1340626
+      },
+      "transcript_snippet": "in ielts speaking you'll never know what topic you have to talk about on test day to get a high score you'll need to know how to talk about a range of topics so you'll be ready for whatever question the examiner asks in this video i'm going to help you out by showing you the 20 most common ielts speaking topics in this video we will go through each of the top 20 ielts topics that you might get in ielts speaking during each topic we will ask jay an example speaking part 1 question and then listen to his response after that i'll show you some other questions that you could get for that topic on test day now before we begin looking at the most common ielts speaking topics make sure to hit that subscribe button for the best ielts test prep videos on the internet let's start with the first topic you might have to talk about on test day the first topic is animals all right when you hear the topic of animals maybe you think of words like pet captivity endangered extinct and so on so they're all great topical words but it's very unlikely that you'll use words like that in part one of ielts speaking because the examiner will ask you pretty simple questions you won't need sophisticated vocabulary like that are you ready for your first question you can pause the video and try to answer the question yourself or you can watch jay give his response let's talk about animals do you like animals yeah in general i like animals i think i've become a little bit more discerning as i've aged with regard to which animals i like for example i don't like silly jumpy dogs anymore i like quiet placid dogs great did you notice how straightforward the question was and his answer was perfect just the right length and it demonstrated lots of great vocabulary not necessarily topical but good vocab nevertheless let's take a closer look at his response i like how we used in general to begin his opinion yeah in general i like animals that's a nice way to do that then he compared his present self with his past self i think i've become a little bit more discerning as i've aged with regard to which animals i like and then he gave an example other questions you may receive on test day could look like this what animals can you see in your city or country are animals used in farming in your what animal would you like to see in the wild these three questions along with many more animal related ielts speaking questions can be found in e2's ielts topic toolkit ebook this ebook contains over 100 pages of speaking questions topical vocabulary and other resources you can use to learn more about the 20 topics in this video you'll be prepared for any question you get on test day...",
+      "relevance": 0.1,
+      "why_relevant": "YouTube: Top 20 IELTS Speaking Topics with Answers",
+      "subs": {
+        "relevance": 10,
+        "recency": 0,
+        "engagement": 100
+      },
+      "score": 34
+    },
+    {
+      "id": "-2QntVkXKGE",
+      "title": "Psychometric Principles & Intelligence Tests [AP Psychology Unit 5 Topic 10] (5.10)",
+      "url": "https://www.youtube.com/watch?v=-2QntVkXKGE",
+      "channel_name": "Mr. Sinn",
+      "date": "2022-01-25",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 13,
+        "likes": 359,
+        "views": 40416
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: Psychometric Principles & Intelligence Tests [AP Psychology ",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 38
+      },
+      "score": 33
+    },
+    {
+      "id": "y4Ej7DQ6v_w",
+      "title": "IELTS English Podcast - Speaking Topic: Communication",
+      "url": "https://www.youtube.com/watch?v=y4Ej7DQ6v_w",
+      "channel_name": "IELTS Plus",
+      "date": "2024-08-19",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 51,
+        "likes": 380,
+        "views": 9693
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: IELTS English Podcast - Speaking Topic: Communication",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 30
+      },
+      "score": 31
+    },
+    {
+      "id": "YoSxiLxHR_c",
+      "title": "Trinity B1 English GESE exam Examiner topic Special Occasions UK gov spouse visa citizenship pass",
+      "url": "https://www.youtube.com/watch?v=YoSxiLxHR_c",
+      "channel_name": "My English",
+      "date": "2025-09-07",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 10,
+        "likes": 153,
+        "views": 6757
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: Trinity B1 English GESE exam Examiner topic Special Occasion",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 19
+      },
+      "score": 28
+    },
+    {
+      "id": "hiTepCnMhjU",
+      "title": "Intelligence & Achievement (AP Psychology Review Unit 2 Topic 8)",
+      "url": "https://www.youtube.com/watch?v=hiTepCnMhjU",
+      "channel_name": "Mr. Sinn",
+      "date": "2026-01-09",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 9,
+        "likes": 52,
+        "views": 3871
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: Intelligence & Achievement (AP Psychology Review Unit 2 Topi",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 8
+      },
+      "score": 24
+    },
+    {
+      "id": "dRxTzMIM1gE",
+      "title": "Trinity B1 Sample Topic \u2013 My Job | Easy Answer",
+      "url": "https://www.youtube.com/watch?v=dRxTzMIM1gE",
+      "channel_name": "Pass Exam Easily",
+      "date": "2025-05-17",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 51,
+        "views": 2493
+      },
+      "transcript_snippet": "",
+      "relevance": 0.5,
+      "why_relevant": "YouTube: Trinity B1 Sample Topic \u2013 My Job | Easy Answer",
+      "subs": {
+        "relevance": 50,
+        "recency": 0,
+        "engagement": 0
+      },
+      "score": 22
+    }
+  ],
+  "tiktok": [
+    {
+      "id": "TK1",
+      "text": "Students fail the NCLEX because \u2b07\ufe0f\u2b07\ufe0f ..they overcomplicate these 5 topics! But they are actually some of the easiest points on the exam. Most students just study them the wrong way. They try to memorize everything. The NCLEX is not testing how many facts you can memorize. It\u2019s testing if you understand the pattern. Here\u2019s what to remember \ud83d\udc47 \u2e3b Isolation The question is not about the disease. It\u2019s about how the germ spreads. Airborne \u2192 floats in the air Droplet \u2192 cough or sneeze Contact \u2192 touch or surfaces Answer tip: Ask how it spreads first. Not what the disease is. \u2e3b Potassium Potassium controls the heart\u2019s electrical system. High potassium can slow the heart. Low potassium can cause dangerous rhythms. Answer tip: If potassium is abnormal, think about the heart monitor first. \u2e3b Magnesium Magnesium depresses the nervous system. Too much magnesium can cause weak muscles, slow breathing, and no reflexes. Answer tip: No deep tendon reflexes = magnesium toxicity. Antidote: calcium gluconate. \u2e3b Shock Shock means organs are not getting enough oxygen. Early shock can still have normal blood pressure. Answer tip: Do not wait for low BP. High heart rate is often the early warning sign. \u2e3b Priority Questions Without oxygen, cells die. Answer tip: Airway Breathing Circulation Always fix oxygen first. \u2e3b Notice something. I\u2019m not memorizing lists. I\u2019m recognizing patterns. If this is finally making NCLEX questions make sense\u2026 You need to start studying this way. Stop overcomplicating. Start understanding. Save this so you don\u2019t miss these easy points. \ud83d\udccc Hope this helps and reshare to help another nursing buddy! \ud83d\udd01  Happy studying! \ud83d\udcda  \u2728FOLLOW\u2728 for more NCLEX prep tips all things nursing! \ud83e\ude7a\ud83d\udc69\ud83c\udffc\u200d\u2695\ufe0f #N#NCLEXn#nclexprepS#StudyTipsn#nursingschooln#nursingstudents",
+      "url": "https://www.tiktok.com/@nursenicolenclex/video/7613418710002355487",
+      "author_name": "nursenicolenclex",
+      "date": "2026-03-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 4,
+        "likes": 257,
+        "views": 2767,
+        "shares": 39
+      },
+      "caption_snippet": "Students fail because they are overcomplicate these five topics. They are actually the easiest points on the NCLX. You exactly what you need to know. No more, no less, no fluff. Let's go. The first one is isolation. The NCLX is testing you on how do the germs spread. And what most students do is they try to memorize the disease list for each precaution. The way to fix that is I want you to think, are they floating, are they falling or is it spread by touch? If it floats airborne and you wear an N95. If it falls, it's droplet and you wear a mask. If it's touch, then it's contact and you're just gonna wear gloves and a mask. Notice I'm not memorising diseases. I'm understanding the transmission. Number two is potassium. The trap is students focus on random symptoms and the fix are going to think if they have high potassium, protect the heart. If the potassium is low, you have to replace and monitor the potassium is off. I want you to think cardiac monitoring first. Realise I'm not trying to remember labs following the pattern of what could happen. Me as a nurse, have to prevent complications. Doesn't care that you know it's out of range. They care about what are you going to do to prevent harm before something bad happens. The third thing is magnesium. Magnesium depresses the nervous system. Students forget that magnesium affects reflexes. So if your patient has no Deep tendon reflexes. That is toxicity. The antidote is your Calcium gluconate. So it gives you one clue and you have the one action that fixes it. That's how you stop missing easy points. Fourth topic is shock. What that means is there's not enough oxygen to the tissues. And what most students do is they wait to see that low blood pressure. But what you need to be watching for is the early signs. Tachycardia, normal blood pressure. Do not wait for hypotension. Do your oxygen and perfusion. Fifth topic is priority. Yourselves have no oxygen. Most students do on the exams. They will pick the most dramatic answer. Keep it simple. Airway breathing, circulation first. Always. I am telling you to stop memorizing things and actually think about the pattern. Think about what's going on in the body and why something is happening. If my teaching actually makes it make sense to you, actually clicks, you need to start studying this way. Stop complicating it but actually understanding it. I'll send you more information or run to the top of my page and grab it. Now don't waste any more time studying the wrong way. Like save. Share this out you on the next video. Happy studying.",
+      "hashtags": [
+        "nclex",
+        "nclexprep",
+        "studytips",
+        "nursingschool",
+        "nursingstudents"
+      ],
+      "relevance": 0.1,
+      "why_relevant": "TikTok: Students fail the NCLEX because \u2b07\ufe0f\u2b07\ufe0f ..they overcomplicate t",
+      "subs": {
+        "relevance": 10,
+        "recency": 93,
+        "engagement": 100
+      },
+      "score": 57
+    },
+    {
+      "id": "TK2",
+      "text": "Replying to @\u1e9e Also, review basic math, especially percentages, since there were a few math questions on the test. Hope this helps!  \u2022 \u2022 \u2022 #HSRT\u2003\u2003#HealthScienceReasoningTest #NursingStudent\u2003\u2003#Prenursing #NursingSchoolTips\u2003\u2003#ExamTips #StudyTips\u2003\u2003#TestPrep #NursingTok\u2003\u2003#StudentNurse #FutureNurse\u2003\u2003#CollegeTok #HealthScience\u2003\u2003#ExamAdvice #StudyMotivation #nursingentranceexam #examadvice #prenursing #nursingstudent ",
+      "url": "https://www.tiktok.com/@imaniilene/video/7603188503840705805",
+      "author_name": "imaniilene",
+      "date": "2026-02-05",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 9,
+        "likes": 76,
+        "views": 1495,
+        "shares": 7
+      },
+      "caption_snippet": "Hey, my name is amani. I'm a pre nursing student. And I actually wanted to answer this question on video form because I think I cracked the code on how to score high on the HRIS test. I took the exam twice. The first time they said, hey, you don't need to study for this test. It's a critical thinking exam. You, we just wanna score you. It's not a pass or fail, but if you score low, you may not even get into the nursing program. So here are some of my resources. I rented this book from my library, my school's library. I wouldn't personally buy the book, but it did help baseline of like thinking critically. Next. I don't know if I can share the link, but if you DM me, i'll share it personally to you. Um, this is the quizlet and it goes over the definitions of everything. Because when you're taking the test, there's different types of questions. There can be a question that's assumption and they may ask like what is this type of question? And you're gonna wanna know how to answer it. And if you know these definitions, you're gonna be able to answer better on your exam. Alright, so here is my gym. This is what I use the second time around to actually study. It's called I prep critical thinking practice test. It is thirty dollars. That's a downer. But it does have like those questions. I was telling You like. You're gonna need to know the definitions of. But it goes into depth of how to answer each question. Um, there is like a free version if you wanna see if it's for you. And I guess they have like a little youtube channel too. So you should check this one out. This one here, the inside base camp, is the exact mock up for me. It looked exactly like my test. This is what helped me um, with my exam. It is fifteen dollars. But your real test is fifty minutes. This is also time. Fifty minutes is thirty four questions on the test, thirty four questions in real life. Um, it goes over um, all the stuff that you need to study. So if you studied your quizlet, you studied the eye prep, even if you don't do the eye prep and solely study the um, quizlet, you should be fine. It gives you a score at the end the exact same way it would do in an actual. Your actual exam.",
+      "hashtags": [
+        "hsrt",
+        "healthsciencereasoningtest",
+        "nursingstudent",
+        "prenursing",
+        "nursingschooltips",
+        "examtips",
+        "studytips",
+        "testprep",
+        "nursingtok",
+        "studentnurse",
+        "futurenurse",
+        "collegetok",
+        "healthscience",
+        "examadvice",
+        "studymotivation",
+        "nursingentranceexam",
+        "examadvice",
+        "prenursing",
+        "nursingstudent"
+      ],
+      "relevance": 0.5,
+      "why_relevant": "TikTok: Replying to @\u1e9e Also, review basic math, especially percentag",
+      "subs": {
+        "relevance": 50,
+        "recency": 3,
+        "engagement": 85
+      },
+      "score": 48
+    },
+    {
+      "id": "TK3",
+      "text": "EXAM QUESTIONS 2026 \ud83d\udcda\ud83d\udd25 Practice Qs & Expert-Verified Explanations \ud83d\udcaf\u2728 Getting ready for your exam in 2026? \ud83d\ude80 This powerful practice session helps you review high-yield topics, understand answer logic, and improve confidence before test day \ud83c\udfaf\ud83e\udde0 Instead of memorizing random answers, this guide focuses on clear explanations so you truly understand concepts and can apply them correctly during the real exam \ud83d\udcaa\ud83d\udcd6 Inside this 2026 exam prep session: \ud83d\udcd8 Carefully selected practice-style questions \ud83e\udde0 Step-by-step answer explanations \ud83d\udcca Breakdown of commonly tested topics \ud83d\udcdd Multiple-choice strategy tips \ud83d\udd25 How to eliminate wrong answers fast \u23f1\ufe0f Time-management techniques \ud83d\udeab Common traps exam writers use \ud83d\udca1 Critical thinking strategies for tricky questions This review is designed to simulate real exam difficulty so you can identify weak areas and strengthen them before your test \ud83c\udf93\u2728 Consistent practice with detailed explanations is the fastest way to boost your performance and reduce exam anxiety \ud83d\udcaf We also provide additional practice resources, study guides, concept summaries, and structured exam support to help you succeed in 2026 \ud83d\udcda\ud83d\udee0\ufe0f Save this for revision \ud83d\udccc Share with classmates \ud83e\udd1d and subscribe for more high-impact exam prep content designed to help you excel \ud83c\udfc6 #ExamQuestions #PracticeTest2026 #StudyGuide #TestPrep #ExamSuccess #LearnAndPass https://www.learnexams.com/study-content/exam-questions-52948",
+      "url": "https://www.tiktok.com/@lectgeorge1/video/7610513762998652167",
+      "author_name": "lectgeorge1",
+      "date": "2026-02-24",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 0,
+        "views": 77,
+        "shares": 0
+      },
+      "caption_snippet": "EXAM QUESTIONS 2026 \ud83d\udcda\ud83d\udd25 Practice Qs & Expert-Verified Explanations \ud83d\udcaf\u2728 Getting ready for your exam in 2026? \ud83d\ude80 This powerful practice session helps you review high-yield topics, understand answer logic, and improve confidence before test day \ud83c\udfaf\ud83e\udde0 Instead of memorizing random answers, this guide focuses on clear explanations so you truly understand concepts and can apply them correctly during the real exam \ud83d\udcaa\ud83d\udcd6 Inside this 2026 exam prep session: \ud83d\udcd8 Carefully selected practice-style questions \ud83e\udde0 Step-by-step answer explanations \ud83d\udcca Breakdown of commonly tested topics \ud83d\udcdd Multiple-choice strategy tips \ud83d\udd25 How to eliminate wrong answers fast \u23f1\ufe0f Time-management techniques \ud83d\udeab Common traps exam writers use \ud83d\udca1 Critical thinking strategies for tricky questions This review is designed to simulate real exam difficulty so you can identify weak areas and strengthen them before your test \ud83c\udf93\u2728 Consistent practice with detailed explanations is the fastest way to boost your performance and reduce exam anxiety \ud83d\udcaf We also provide additional practice resources, study guides, concept summaries, and structured exam support to help you succeed in 2026 \ud83d\udcda\ud83d\udee0\ufe0f Save this for revision \ud83d\udccc Share with classmates \ud83e\udd1d and subscribe for more high-impact exam prep content designed to help you excel \ud83c\udfc6 #ExamQuestions #PracticeTest2026 #StudyGuide #TestPrep #ExamSuccess #LearnAndPass https://www.learnexams.com/study-content/exam-questions-52948",
+      "hashtags": [],
+      "relevance": 0.5,
+      "why_relevant": "TikTok: EXAM QUESTIONS 2026 \ud83d\udcda\ud83d\udd25 Practice Qs & Expert-Verified Explana",
+      "subs": {
+        "relevance": 50,
+        "recency": 66,
+        "engagement": 0
+      },
+      "score": 39
+    }
+  ],
+  "instagram": [
+    {
+      "id": "IG1",
+      "text": "Here is a **simple step-by-step way to study for a test:**\n\n**1. Find out what the test covers**\nLook at your notes, homework, study guide, or textbook to see the topics that will be on the test.\n\n**2. Break the material into small parts**\nDivide the topics into smaller sections so it feels easier to study.\n\n**3. Review your notes**\nRead through your notes slowly and make sure you understand the key ideas.\n\n**4. Write important things down**\nRewrite key facts, formulas, vocabulary, or definitions. Writing helps your brain remember.\n\n**5. Test yourself**\nCover your notes and try to explain the topic from memory or answer practice questions.\n\n**6. Study in short sessions**\nStudy for about **25\u201340 minutes**, then take a **5\u201310 minute break**.\n\n**7. Remove distractions**\nPut your phone away, turn off notifications, and find a quiet place to focus.\n\n**8. Ask for help if needed**\nIf something doesn\u2019t make sense, ask a teacher, friend, or look at examples.\n\n**9. Review again later**\nGo over the material again later the same day or the next day to strengthen memory.\n\n**10. Sleep before the test**\nGet a good night of sleep so your brain can remember what you studied.\n#test #studytips #school #exam #learning",
+      "url": "https://www.instagram.com/reel/DVh8RUggqMO/",
+      "author_name": "bepis.shit",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 9,
+        "likes": 1966,
+        "views": 26394
+      },
+      "caption_snippet": "Oh shit",
+      "hashtags": [
+        "test",
+        "studytips",
+        "school",
+        "exam",
+        "learning"
+      ],
+      "relevance": 1.0,
+      "why_relevant": "Instagram: Here is a **simple step-by-step way to study for a test:**\n\n",
+      "subs": {
+        "relevance": 100,
+        "recency": 100,
+        "engagement": 100
+      },
+      "score": 100
+    },
+    {
+      "id": "IG3",
+      "text": "Master Your Memory\n\u2022 Test, Don\u2019t Just Read: \nAfter finishing a topic or subject. Put the notes down and grab some practice questions. Testing yourself is the fastest way to bridge the gap between \u201cI read it\u201d and \u201cI know it.\u201d\n\n\u2022 Be Your Own Teacher: \n Voice record yourself explaining a complex topic in your own words. Listen to the \u201cpodcast of you\u201d on your commute or the way to your exam for final preparation .\n\nRefresh Your Focus\n\u2022 Switch Up Your Scenery: \n If you\u2019re getting bored or distracted, change environments when you switch subjects. A new desk or a cozy cafe can give your brain the \u201creset\u201d it needs.\n\nFuel Your Brain\n\u2022 Eat Smart and take a Break: \nYour brain is an engine\u2014don\u2019t fuel it with junk! Swap the greasy snacks for healthy brain food and make sure to take scheduled breaks to avoid stress.\n\n#study #mindset #examseason #studytips #success",
+      "url": "https://www.instagram.com/reel/DVDVwhuDE2H/",
+      "author_name": "livin_unapologetic",
+      "date": "2026-02-22",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 343,
+        "views": 18558
+      },
+      "caption_snippet": "Master Your Memory\n\u2022 Test, Don\u2019t Just Read: \nAfter finishing a topic or subject. Put the notes down and grab some practice questions. Testing yourself is the fastest way to bridge the gap between \u201cI read it\u201d and \u201cI know it.\u201d\n\n\u2022 Be Your Own Teacher: \n Voice record yourself explaining a complex topic in your own words. Listen to the \u201cpodcast of you\u201d on your commute or the way to your exam for final preparation .\n\nRefresh Your Focus\n\u2022 Switch Up Your Scenery: \n If you\u2019re getting bored or distracted, change environments when you switch subjects. A new desk or a cozy cafe can give your brain the \u201creset\u201d it needs.\n\nFuel Your Brain\n\u2022 Eat Smart and take a Break: \nYour brain is an engine\u2014don\u2019t fuel it with junk! Swap the greasy snacks for healthy brain food and make sure to take scheduled breaks to avoid stress.\n\n#study #mindset #examseason #studytips #success",
+      "hashtags": [
+        "study",
+        "mindset",
+        "examseason",
+        "studytips",
+        "success"
+      ],
+      "relevance": 1.0,
+      "why_relevant": "Instagram: Master Your Memory\n\u2022 Test, Don\u2019t Just Read: \nAfter finishing",
+      "subs": {
+        "relevance": 100,
+        "recency": 60,
+        "engagement": 78
+      },
+      "score": 83
+    },
+    {
+      "id": "IG2",
+      "text": "The real horror isn\u2019t the exam itself. It\u2019s that moment when you see a question on the one topic you decided to skip because \u201cit probably won\u2019t come up.\u201d\n\nEvery student has experienced this. Due to lack of time, you skip sections because they seemed unlikely. Then exam day hits and that exact topic is worth 20% of your grade.\n\nWHY THIS KEEPS HAPPENING\nMost students study reactively instead of strategically. They guess what\u2019s important based on what the professor emphasized or what appeared on past exams. But professors know students do this, so they deliberately test the topics everyone assumes are safe to skip.\nThe students who never get caught off guard aren\u2019t the ones who studied everything equally. They\u2019re the ones who used practice tests and past papers to identify patterns, then made sure they had at least baseline coverage of every possible topic.\n\nHOW TO NEVER GET BLINDSIDED AGAIN\nUse practice exams to see the full scope of what could be tested. Identify your weak spots early and drill them with active recall. Make sure to cover the syllabus in its entirety, not just the topics you think are \u201cmost likely.\u201d\nResearch shows that practice tests don\u2019t just help you study better. They also help with finding out what you don\u2019t know so you can fix it before it costs you marks.\n\nThe worst feeling in an exam isn\u2019t struggling with a hard question. It\u2019s realizing you could have prepared for it but chose not to.",
+      "url": "https://www.instagram.com/reel/DU-5LL8EfRe/",
+      "author_name": "the_studycoach",
+      "date": "2026-02-20",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 382,
+        "views": 18767
+      },
+      "caption_snippet": "What's the worst horror movie you've ever seen? Walking into an exam and seeing a question on the one topic I thought could never come up",
+      "hashtags": [],
+      "relevance": 1.0,
+      "why_relevant": "Instagram: The real horror isn\u2019t the exam itself. It\u2019s that moment when",
+      "subs": {
+        "relevance": 100,
+        "recency": 53,
+        "engagement": 78
+      },
+      "score": 81
+    },
+    {
+      "id": "IG4",
+      "text": "Test prep without the burnout? Yes, please. \ud83d\ude4b\u200d\u2640\ufe0f\nTest season doesn\u2019t have to mean stacks of practice responses and hours of manual scoring.\n\nHere\u2019s what this actually means for you:\n1\u20e3 Built-in rubrics\nStop scoring every response by hand. Get consistent, instant feedback aligned to your expectations.\n2\u20e3 Clear insight before test day\nTrack strengths, gaps, and trends in real time so you know exactly where to focus instruction.\n3\u20e3 More time back in your day\nLess grading. More teaching. More breathing room.\n\nDrop \u201ctest prep\u201d in the comments \ud83d\udc47 and we\u2019ll send you the link to get started for free.\n#TestPrep #TeacherLife #EdTech #SecondaryTeachers #TeacherSupport",
+      "url": "https://www.instagram.com/reel/DVeu-YCCGX9/",
+      "author_name": "class.companion",
+      "date": "2026-03-04",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 6,
+        "views": 163
+      },
+      "caption_snippet": "easy as 1-2-3. add assignments. students take assignments. view submissions and insights. it also has built-in rubrics and so you can say goodbye to manually scoring every single response. class companion applies CAASPP test rubric for you to ensure that consistency and save that time. so you can also track student progress effortlessly, so you're getting clear insights into strengths, gaps, trends before test day, so you know exactly where to focus your instruction. and the best part, it's free.",
+      "hashtags": [
+        "TestPrep",
+        "TeacherLife",
+        "EdTech",
+        "SecondaryTeachers",
+        "TeacherSupport"
+      ],
+      "relevance": 0.5,
+      "why_relevant": "Instagram: Test prep without the burnout? Yes, please. \ud83d\ude4b\u200d\u2640\ufe0f\nTest season",
+      "subs": {
+        "relevance": 50,
+        "recency": 93,
+        "engagement": 11
+      },
+      "score": 49
+    },
+    {
+      "id": "IG5",
+      "text": "\ud83e\udde0 Knowing the topic isn\u2019t the problem. Showing it in exams is.\n\nSo many capable students walk into exams prepared\u2026 and walk out frustrated. Not because they didn\u2019t revise \u2014 but because exams demand a different skill set altogether.\n\n\ud83d\udccc It\u2019s about understanding what the question is really asking\n\ud83d\udccc Planning answers clearly under time pressure\n\ud83d\udccc Avoiding silly mistakes when nerves kick in\n\ud83d\udccc Staying focused even when one question throws them off\n\nThis is where the right guidance changes everything. With Suited Tutor, students don\u2019t just cover the syllabus \u2014 they learn exam strategy, confidence, and smart problem-solving. Tutors coach them through real exam-style questions, personalised feedback, and techniques that turn knowledge into marks.\n\nFor parents, that means fewer late-night worries.\nFor students, that means walking into exams with a clear plan \u2014 not crossed fingers.\n\n\u2728 Because strong preparation + the right exam mindset = results that finally reflect the effort.\n\n#ExamConfidence #SmartRevision #UKStudents #ParentSupport #StudySmarter #GCSE #ALevels",
+      "url": "https://www.instagram.com/reel/DU-pAaMgLgY/",
+      "author_name": "suitedtutor",
+      "date": "2026-02-20",
+      "date_confidence": "high",
+      "engagement": {
+        "num_comments": 0,
+        "likes": 1,
+        "views": 101
+      },
+      "caption_snippet": "Unlock Exam Success: Think Smarter!\nEver noticed how your child understands the topic but freezes when the exam paper lands?\nThey revise, they practice, but under pressure, the questions suddenly feel confusing.\nMost students don't struggle with subjects. They struggle with exam thinking, reading questions properly, managing time, structuring answers, staying calm when they get stuck.\nAt Suited Tutor, we don't just teach topics. We teach students how to think in exams, how to break down tricky questions, avoid common mistakes and turn understanding into marks.\nSo parents stop worrying. They know it, but they can't show it.\nAnd students stop feeling like exams are a guessing game. Because success isn't about working harder. It's about learning smarter with Suited Tutor.",
+      "hashtags": [
+        "ExamConfidence",
+        "SmartRevision",
+        "UKStudents",
+        "ParentSupport",
+        "StudySmarter",
+        "GCSE",
+        "ALevels"
+      ],
+      "relevance": 0.5,
+      "why_relevant": "Instagram: \ud83e\udde0 Knowing the topic isn\u2019t the problem. Showing it in exams i",
+      "subs": {
+        "relevance": 50,
+        "recency": 53,
+        "engagement": 0
+      },
+      "score": 35
+    }
+  ],
+  "hackernews": [
+    {
+      "id": "HN19",
+      "title": "Launch HN: OctaPulse (YC W26) \u2013 Robotics and computer vision for fish farming",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47220320",
+      "author": "rohxnsxngh",
+      "date": "2026-03-02",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 111,
+        "num_comments": 58
+      },
+      "top_comments": [
+        {
+          "score": 0,
+          "date": null,
+          "author": "chadash",
+          "excerpt": "The fish cursor is cute, but extremely annoying.",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "donalbrecht",
+          "excerpt": "This is an awesome concept.  Thanks for sharing.\nHave you had any issues with turbidity so far?",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "dogclaw",
+          "excerpt": "Shinkei was for the rich; you guys make it for all",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "cameron_b",
+          "excerpt": "As a home aquaponics grower, I am really interested in the opportunity to develop tools that help this industry grow smarter. The impact to open-water fisheries can be undone if the markets can be affected to appreciate farm-raised fish for their quality.\nI think there is such an incredible opportun...",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "lcnlvrz",
+          "excerpt": "Great product!\nI wonder how do you manage data labeling? Do you outsource it by using data label vendors or do you have something in-house?",
+          "url": ""
+        }
+      ],
+      "comment_insights": [
+        "The fish cursor is cute, but extremely annoying.",
+        "This is an awesome concept",
+        "Shinkei was for the rich; you guys make it for all",
+        "As a home aquaponics grower, I am really interested in the opportunity to develop tools that help this industry grow smarter",
+        "Great product!"
+      ],
+      "relevance": 0.67,
+      "why_relevant": "HN story about Launch HN: OctaPulse (YC W26) \u2013 Robotics and computer vision",
+      "subs": {
+        "relevance": 67,
+        "recency": 86,
+        "engagement": 100
+      },
+      "score": 81
+    },
+    {
+      "id": "HN4",
+      "title": "Show HN: Beautiful interactive explainers generated with Claude Code",
+      "url": "https://paraschopra.github.io/explainers/",
+      "hn_url": "https://news.ycombinator.com/item?id=47058080",
+      "author": "paraschopra",
+      "date": "2026-02-18",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 43,
+        "num_comments": 30
+      },
+      "top_comments": [
+        {
+          "score": 0,
+          "date": null,
+          "author": "coulix",
+          "excerpt": "Looking great, how did you standardized animations / canvas work? Did AI help?",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "yu3zhou4",
+          "excerpt": "Please share prompts or md files so we can generate more!",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "webcoon",
+          "excerpt": "Are these animated visualizations in the sky-explainer all original? If so, I am blown away by the visual consistency and meaningfulness of these throughout the article.",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "sixtyj",
+          "excerpt": "There was a discussion yesterday that LLM generated \u201cShow HN\u201d posts should be moved to another thread :)\nNevertheless, it looks nice but I can\u2019t be sure that texts are correct. Did OP check everything because she/he knows deeply the topic?\nCitations give credits to text but can we be sure about them...",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "verdverm",
+          "excerpt": "Are they accurate? How do you verify?",
+          "url": ""
+        }
+      ],
+      "comment_insights": [
+        "Looking great, how did you standardized animations / canvas work? Did AI help?",
+        "Please share prompts or md files so we can generate more!",
+        "Are these animated visualizations in the sky-explainer all original? If so, I am blown away by the visual consistency and meaningfulness of these throughout the article.",
+        "There was a discussion yesterday that LLM generated \u201cShow HN\u201d posts should be moved to another thread :)",
+        "Are they accurate? How do you verify?"
+      ],
+      "relevance": 0.85,
+      "why_relevant": "HN story about Show HN: Beautiful interactive explainers generated with Cla",
+      "subs": {
+        "relevance": 85,
+        "recency": 46,
+        "engagement": 80
+      },
+      "score": 73
+    },
+    {
+      "id": "HN9",
+      "title": "Show HN: Personalized financial literacy book for your kid",
+      "url": "https://cointales.ai/en/create-your-book",
+      "hn_url": "https://news.ycombinator.com/item?id=47281859",
+      "author": "mhalifax",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 6
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.71,
+      "why_relevant": "HN story about Show HN: Personalized financial literacy book for your kid",
+      "subs": {
+        "relevance": 71,
+        "recency": 100,
+        "engagement": 21
+      },
+      "score": 63
+    },
+    {
+      "id": "HN7",
+      "title": "Show HN: Didacu \u2013 The fastest way to learn something new",
+      "url": "https://didacu.com",
+      "hn_url": "https://news.ycombinator.com/item?id=47199232",
+      "author": "datadiego",
+      "date": "2026-02-28",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.74,
+      "why_relevant": "HN story about Show HN: Didacu \u2013 The fastest way to learn something new",
+      "subs": {
+        "relevance": 74,
+        "recency": 80,
+        "engagement": 5
+      },
+      "score": 54
+    },
+    {
+      "id": "HN3",
+      "title": "Show HN: MQTT Topic Lab \u2013 MQTT client with buttons using command variables",
+      "url": "https://github.com/alsoftbv/topic-lab",
+      "hn_url": "https://news.ycombinator.com/item?id=47101951",
+      "author": "altug",
+      "date": "2026-02-21",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 4,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.81,
+      "why_relevant": "HN story about Show HN: MQTT Topic Lab \u2013 MQTT client with buttons using com",
+      "subs": {
+        "relevance": 81,
+        "recency": 56,
+        "engagement": 12
+      },
+      "score": 54
+    },
+    {
+      "id": "HN6",
+      "title": "Show HN: AI agents designed and shipped this app end-to-end in 36 hours for $270",
+      "url": "https://www.ninjaflix.ai/",
+      "hn_url": "https://news.ycombinator.com/item?id=47059153",
+      "author": "arashsadrieh",
+      "date": "2026-02-18",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 4
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.76,
+      "why_relevant": "HN story about Show HN: AI agents designed and shipped this app end-to-end ",
+      "subs": {
+        "relevance": 76,
+        "recency": 46,
+        "engagement": 23
+      },
+      "score": 52
+    },
+    {
+      "id": "HN21",
+      "title": "Show HN: A Software-Defined USB PD Charger (ESP32, FPGA, Open Source Hardware)",
+      "url": "https://www.crowdsupply.com/candysign/hummingkit",
+      "hn_url": "https://news.ycombinator.com/item?id=47215819",
+      "author": "SDCforAll",
+      "date": "2026-03-02",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 6,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.57,
+      "why_relevant": "HN story about Show HN: A Software-Defined USB PD Charger (ESP32, FPGA, Ope",
+      "subs": {
+        "relevance": 56,
+        "recency": 86,
+        "engagement": 17
+      },
+      "score": 51
+    },
+    {
+      "id": "HN10",
+      "title": "Ask HN: Upstream-First vs. the \"Culture of Silence\" in Embedded Engineering",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47206221",
+      "author": "tawayaccount",
+      "date": "2026-03-01",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.69,
+      "why_relevant": "HN story about Ask HN: Upstream-First vs. the \"Culture of Silence\" in Embed",
+      "subs": {
+        "relevance": 69,
+        "recency": 83,
+        "engagement": 0
+      },
+      "score": 51
+    },
+    {
+      "id": "HN8",
+      "title": "ActivationKit \u2013 AI agent replaces manual tooltip tours with one script tag",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47151982",
+      "author": "activationkit",
+      "date": "2026-02-25",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.73,
+      "why_relevant": "HN story about ActivationKit \u2013 AI agent replaces manual tooltip tours with ",
+      "subs": {
+        "relevance": 73,
+        "recency": 70,
+        "engagement": 5
+      },
+      "score": 51
+    },
+    {
+      "id": "HN2",
+      "title": "Show HN: I built a thinking framework for Claude",
+      "url": "https://bengiaventures.github.io/effective-thinking-skill/",
+      "hn_url": "https://news.ycombinator.com/item?id=47053666",
+      "author": "bengia",
+      "date": "2026-02-17",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.81,
+      "why_relevant": "HN story about Show HN: I built a thinking framework for Claude",
+      "subs": {
+        "relevance": 81,
+        "recency": 43,
+        "engagement": 5
+      },
+      "score": 48
+    },
+    {
+      "id": "HN11",
+      "title": "Show HN: Train a 230KB text classifier from 50 examples \u2013 no API keys, no GPU",
+      "url": "https://github.com/expressibleai/expressible-cli",
+      "hn_url": "https://news.ycombinator.com/item?id=47137506",
+      "author": "veniyer",
+      "date": "2026-02-24",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.68,
+      "why_relevant": "HN story about Show HN: Train a 230KB text classifier from 50 examples \u2013 no",
+      "subs": {
+        "relevance": 68,
+        "recency": 66,
+        "engagement": 0
+      },
+      "score": 47
+    },
+    {
+      "id": "HN15",
+      "title": "Show HN: Runtric \u2013 Turn any topic into a chapter-based learning path",
+      "url": "https://runtric.com/",
+      "hn_url": "https://news.ycombinator.com/item?id=47161720",
+      "author": "resetmerlin",
+      "date": "2026-02-26",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.62,
+      "why_relevant": "HN story about Show HN: Runtric \u2013 Turn any topic into a chapter-based learn",
+      "subs": {
+        "relevance": 62,
+        "recency": 73,
+        "engagement": 0
+      },
+      "score": 46
+    },
+    {
+      "id": "HN23",
+      "title": "Show HN: Tropes.fyi \u2013 Name and shame AI writing",
+      "url": "https://tropes.fyi/",
+      "hn_url": "https://news.ycombinator.com/item?id=47088813",
+      "author": "ossa-ma",
+      "date": "2026-02-20",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 5,
+        "num_comments": 3
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.54,
+      "why_relevant": "HN story about Show HN: Tropes.fyi \u2013 Name and shame AI writing",
+      "subs": {
+        "relevance": 54,
+        "recency": 53,
+        "engagement": 30
+      },
+      "score": 46
+    },
+    {
+      "id": "HN26",
+      "title": "Show HN: Ghostty Pane Splitter \u2013 Split terminal panes for AI coding agents",
+      "url": "https://github.com/rikeda71/ghostty-pane-splitter",
+      "hn_url": "https://news.ycombinator.com/item?id=47204677",
+      "author": "rikeda71",
+      "date": "2026-03-01",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.48,
+      "why_relevant": "HN story about Show HN: Ghostty Pane Splitter \u2013 Split terminal panes for AI",
+      "subs": {
+        "relevance": 48,
+        "recency": 83,
+        "engagement": 5
+      },
+      "score": 43
+    },
+    {
+      "id": "HN16",
+      "title": "Show HN: AI Timeline Maker \u2013 turn text and documents into visual timelines",
+      "url": "https://timeline-maker.org/",
+      "hn_url": "https://news.ycombinator.com/item?id=47119441",
+      "author": "ethanplanva",
+      "date": "2026-02-23",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.61,
+      "why_relevant": "HN story about Show HN: AI Timeline Maker \u2013 turn text and documents into vi",
+      "subs": {
+        "relevance": 61,
+        "recency": 63,
+        "engagement": 0
+      },
+      "score": 43
+    },
+    {
+      "id": "HN24",
+      "title": "Show HN: Google started to (quietly) insert (self) ads into Gemini output",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47094649",
+      "author": "rdslw",
+      "date": "2026-02-20",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 4,
+        "num_comments": 1
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.52,
+      "why_relevant": "HN story about Show HN: Google started to (quietly) insert (self) ads into ",
+      "subs": {
+        "relevance": 52,
+        "recency": 53,
+        "engagement": 20
+      },
+      "score": 42
+    },
+    {
+      "id": "HN20",
+      "title": "Seedance 2.0 preview: The best video model of 2026, outperforming Sora 2",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=46940720",
+      "author": "Alisaqqt",
+      "date": "2026-02-09",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 7,
+        "num_comments": 7
+      },
+      "top_comments": [
+        {
+          "score": 0,
+          "date": null,
+          "author": "Alisaqqt",
+          "excerpt": "API is not available now.",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "Alisaqqt",
+          "excerpt": "API will be available on Atlas Cloud on Feb 24.",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "Alisaqqt",
+          "excerpt": "Seedance 2.0 and Seedream 5.0 API will be available on Atlas Cloud on Feb 24.",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "ksdk",
+          "excerpt": "Docs whers - link?",
+          "url": ""
+        },
+        {
+          "score": 0,
+          "date": null,
+          "author": "ssoydan",
+          "excerpt": "I am very curious about how it will turn out when the API is released",
+          "url": ""
+        }
+      ],
+      "comment_insights": [
+        "API is not available now.",
+        "API will be available on Atlas Cloud on Feb 24.",
+        "Seedance 2.0 and Seedream 5.0 API will be available on Atlas Cloud on Feb 24.",
+        "Docs whers - link?",
+        "I am very curious about how it will turn out when the API is released"
+      ],
+      "relevance": 0.59,
+      "why_relevant": "HN story about Seedance 2.0 preview: The best video model of 2026, outperfo",
+      "subs": {
+        "relevance": 59,
+        "recency": 16,
+        "engagement": 41
+      },
+      "score": 42
+    },
+    {
+      "id": "HN5",
+      "title": "Show HN: Playwright Best Practices AI SKill",
+      "url": "https://github.com/currents-dev/playwright-best-practices-skill",
+      "hn_url": "https://news.ycombinator.com/item?id=46903511",
+      "author": "waltergalvao",
+      "date": "2026-02-05",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 7,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.8,
+      "why_relevant": "HN story about Show HN: Playwright Best Practices AI SKill",
+      "subs": {
+        "relevance": 80,
+        "recency": 3,
+        "engagement": 18
+      },
+      "score": 42
+    },
+    {
+      "id": "HN14",
+      "title": "Show HN: XAPIs.dev \u2013 Twitter API Alternative at 90% Lower Cost",
+      "url": "https://xapis.dev",
+      "hn_url": "https://news.ycombinator.com/item?id=46924676",
+      "author": "nmfccodes",
+      "date": "2026-02-07",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 4,
+        "num_comments": 5
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.66,
+      "why_relevant": "HN story about Show HN: XAPIs.dev \u2013 Twitter API Alternative at 90% Lower Co",
+      "subs": {
+        "relevance": 66,
+        "recency": 9,
+        "engagement": 32
+      },
+      "score": 41
+    },
+    {
+      "id": "HN27",
+      "title": "Show HN: Digest.tube \u2013 skim YouTube videos like articles",
+      "url": "https://digest.tube/",
+      "hn_url": "https://news.ycombinator.com/item?id=47155162",
+      "author": "tufan_gokova",
+      "date": "2026-02-25",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.46,
+      "why_relevant": "HN story about Show HN: Digest.tube \u2013 skim YouTube videos like articles",
+      "subs": {
+        "relevance": 46,
+        "recency": 70,
+        "engagement": 5
+      },
+      "score": 39
+    },
+    {
+      "id": "HN28",
+      "title": "Show HN: Widify \u2013 An AI auto-blogging tool that commits directly to GitHub",
+      "url": "https://widify.site/ja",
+      "hn_url": "https://news.ycombinator.com/item?id=47151114",
+      "author": "x-fifteen",
+      "date": "2026-02-25",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.45,
+      "why_relevant": "HN story about Show HN: Widify \u2013 An AI auto-blogging tool that commits dire",
+      "subs": {
+        "relevance": 45,
+        "recency": 70,
+        "engagement": 5
+      },
+      "score": 39
+    },
+    {
+      "id": "HN12",
+      "title": "Ask HN: Predictions on the state of theoretical STEM research post-AGI",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47033985",
+      "author": "expressrisk",
+      "date": "2026-02-16",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.66,
+      "why_relevant": "HN story about Ask HN: Predictions on the state of theoretical STEM researc",
+      "subs": {
+        "relevance": 66,
+        "recency": 40,
+        "engagement": 0
+      },
+      "score": 39
+    },
+    {
+      "id": "HN22",
+      "title": "Show HN: Droptheslop.ai \u2013 pastebin alternative with human typing verification",
+      "url": "https://www.droptheslop.ai/",
+      "hn_url": "https://news.ycombinator.com/item?id=47033948",
+      "author": "parsabg",
+      "date": "2026-02-16",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 6,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.55,
+      "why_relevant": "HN story about Show HN: Droptheslop.ai \u2013 pastebin alternative with human ty",
+      "subs": {
+        "relevance": 55,
+        "recency": 40,
+        "engagement": 17
+      },
+      "score": 39
+    },
+    {
+      "id": "HN17",
+      "title": "Show HN: Spawn \u2013 PostgreSQL migrate/test build system with minijinja (not vibed)",
+      "url": "https://github.com/saward/spawn",
+      "hn_url": "https://news.ycombinator.com/item?id=47055579",
+      "author": "Winsaucerer",
+      "date": "2026-02-18",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.59,
+      "why_relevant": "HN story about Show HN: Spawn \u2013 PostgreSQL migrate/test build system with m",
+      "subs": {
+        "relevance": 59,
+        "recency": 46,
+        "engagement": 0
+      },
+      "score": 38
+    },
+    {
+      "id": "HN29",
+      "title": "Show HN: VerdictMail \u2013 IMAP daemon that uses LLM reasoning to catch phishing",
+      "url": "https://github.com/ascarola/verdictmail",
+      "hn_url": "https://news.ycombinator.com/item?id=47116701",
+      "author": "ascarola",
+      "date": "2026-02-23",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.44,
+      "why_relevant": "HN story about Show HN: VerdictMail \u2013 IMAP daemon that uses LLM reasoning t",
+      "subs": {
+        "relevance": 44,
+        "recency": 63,
+        "engagement": 5
+      },
+      "score": 37
+    },
+    {
+      "id": "HN1",
+      "title": "Show HN: BlogHunter \u2013 Free AI-generated blog and hosting for SEO experiments",
+      "url": "https://bloghunter.se/",
+      "hn_url": "https://news.ycombinator.com/item?id=46898750",
+      "author": "the_plug",
+      "date": "2026-02-05",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.82,
+      "why_relevant": "HN story about Show HN: BlogHunter \u2013 Free AI-generated blog and hosting for",
+      "subs": {
+        "relevance": 82,
+        "recency": 3,
+        "engagement": 0
+      },
+      "score": 37
+    },
+    {
+      "id": "HN13",
+      "title": "Part 2 - AI Chat Evaluation of the Formal Language in He Xin's PEPC System",
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=46976391",
+      "author": "nikicsy",
+      "date": "2026-02-11",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.65,
+      "why_relevant": "HN story about Part 2 - AI Chat Evaluation of the Formal Language in He Xin",
+      "subs": {
+        "relevance": 65,
+        "recency": 23,
+        "engagement": 0
+      },
+      "score": 35
+    },
+    {
+      "id": "HN18",
+      "title": "Show HN: A text-only reasoning core for LLMs (MIT, system prompt and self-test)",
+      "url": "https://github.com/onestardao/WFGY",
+      "hn_url": "https://news.ycombinator.com/item?id=47011530",
+      "author": "wfgy-github",
+      "date": "2026-02-14",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 1,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.58,
+      "why_relevant": "HN story about Show HN: A text-only reasoning core for LLMs (MIT, system pr",
+      "subs": {
+        "relevance": 57,
+        "recency": 33,
+        "engagement": 0
+      },
+      "score": 33
+    },
+    {
+      "id": "HN30",
+      "title": "Show HN: Synrix local-first memory engine (O(k) retrieval, no vectors, no cloud)",
+      "url": "https://github.com/RYJOX-Technologies/Synrix-Memory-Engine",
+      "hn_url": "https://news.ycombinator.com/item?id=47037669",
+      "author": "JosephjackJR",
+      "date": "2026-02-16",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 0
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.42,
+      "why_relevant": "HN story about Show HN: Synrix local-first memory engine (O(k) retrieval, n",
+      "subs": {
+        "relevance": 42,
+        "recency": 40,
+        "engagement": 5
+      },
+      "score": 30
+    },
+    {
+      "id": "HN25",
+      "title": "Show HN: Seele AI \u2013 Generate playable games from text prompts using MLLM",
+      "url": "https://www.seeles.ai/game",
+      "hn_url": "https://news.ycombinator.com/item?id=46897381",
+      "author": "qingmaoguo",
+      "date": "2026-02-05",
+      "date_confidence": "high",
+      "engagement": {
+        "score": 2,
+        "num_comments": 3
+      },
+      "top_comments": [],
+      "comment_insights": [],
+      "relevance": 0.49,
+      "why_relevant": "HN story about Show HN: Seele AI \u2013 Generate playable games from text prompt",
+      "subs": {
+        "relevance": 49,
+        "recency": 3,
+        "engagement": 20
+      },
+      "score": 28
+    }
+  ],
+  "polymarket": [
+    {
+      "id": "PM6",
+      "title": "Next Supreme Leader of Iran?",
+      "question": "Will Mojtaba Khamenei be the next Supreme Leader of Iran?",
+      "url": "https://polymarket.com/event/who-will-be-next-supreme-leader-of-iran-515",
+      "outcome_prices": [
+        [
+          "Mojtaba Khamenei",
+          0.4105
+        ],
+        [
+          "Alireza Arafi",
+          0.1395
+        ],
+        [
+          "the position of Supreme Leader of Iran",
+          0.071
+        ]
+      ],
+      "outcomes_remaining": 9,
+      "price_movement": null,
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 24756100.377097026,
+        "liquidity": 1366879.73663
+      },
+      "end_date": "2026-12-31",
+      "relevance": 0.55,
+      "why_relevant": "Prediction market: Next Supreme Leader of Iran?",
+      "subs": {
+        "relevance": 55,
+        "recency": 100,
+        "engagement": 100
+      },
+      "score": 79
+    },
+    {
+      "id": "PM7",
+      "title": "US x Iran ceasefire by...?",
+      "question": "US x Iran ceasefire by March 6?",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-by",
+      "outcome_prices": [
+        [
+          "US x Iran ceasefire by June 30?",
+          0.67
+        ],
+        [
+          "US x Iran ceasefire by May 31?",
+          0.625
+        ],
+        [
+          "US x Iran ceasefire by April 30?",
+          0.485
+        ]
+      ],
+      "outcomes_remaining": 2,
+      "price_movement": null,
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 18130290.615928005,
+        "liquidity": 1361342.34306
+      },
+      "end_date": null,
+      "relevance": 0.55,
+      "why_relevant": "Prediction market: US x Iran ceasefire by...?",
+      "subs": {
+        "relevance": 55,
+        "recency": 100,
+        "engagement": 96
+      },
+      "score": 78
+    },
+    {
+      "id": "PM5",
+      "title": "Will the Iranian regime fall by March 31?",
+      "question": "Will the Iranian regime fall by March 31?",
+      "url": "https://polymarket.com/event/will-the-iranian-regime-fall-by-march-31",
+      "outcome_prices": [
+        [
+          "Yes",
+          0.106
+        ],
+        [
+          "No",
+          0.894
+        ]
+      ],
+      "outcomes_remaining": 0,
+      "price_movement": "down 6.7% this month",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 19674888.231662963,
+        "liquidity": 773363.33741
+      },
+      "end_date": "2026-03-31",
+      "relevance": 0.58,
+      "why_relevant": "Prediction market: Will the Iranian regime fall by March 31?",
+      "subs": {
+        "relevance": 57,
+        "recency": 100,
+        "engagement": 93
+      },
+      "score": 78
+    },
+    {
+      "id": "PM9",
+      "title": "Iran strikes Israel on...?",
+      "question": "Will Iran strike Israel on March 3?",
+      "url": "https://polymarket.com/event/iran-strikes-israel-on",
+      "outcome_prices": [
+        [
+          "Iran",
+          0.999
+        ],
+        [
+          "Iran",
+          0.9985
+        ],
+        [
+          "Iran",
+          0.86
+        ]
+      ],
+      "outcomes_remaining": 4,
+      "price_movement": null,
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 6484520.274818003,
+        "liquidity": 2897696.11347
+      },
+      "end_date": null,
+      "relevance": 0.54,
+      "why_relevant": "Prediction market: Iran strikes Israel on...?",
+      "subs": {
+        "relevance": 54,
+        "recency": 100,
+        "engagement": 90
+      },
+      "score": 76
+    },
+    {
+      "id": "PM8",
+      "title": "Will Crude Oil (CL) hit__ by end of March?",
+      "question": "Will Crude Oil (CL) hit (HIGH) $90 by end of March?",
+      "url": "https://polymarket.com/event/will-crude-oil-cl-hit-by-end-of-march",
+      "outcome_prices": [
+        [
+          "Crude",
+          0.9985
+        ],
+        [
+          "Crude",
+          0.73
+        ],
+        [
+          "Crude",
+          0.655
+        ]
+      ],
+      "outcomes_remaining": 13,
+      "price_movement": null,
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 10302029.66316,
+        "liquidity": 722129.88292
+      },
+      "end_date": "2026-03-31",
+      "relevance": 0.54,
+      "why_relevant": "Prediction market: Will Crude Oil (CL) hit__ by end of March?",
+      "subs": {
+        "relevance": 54,
+        "recency": 100,
+        "engagement": 85
+      },
+      "score": 74
+    },
+    {
+      "id": "PM2",
+      "title": "Russia nuclear test by...?",
+      "question": "Will Russia test a nuclear weapon by March 31 2026?",
+      "url": "https://polymarket.com/event/russia-nuclear-test-by",
+      "outcome_prices": [
+        [
+          "Yes",
+          0.0305
+        ],
+        [
+          "No",
+          0.9695
+        ]
+      ],
+      "outcomes_remaining": 0,
+      "price_movement": "down 2.8% this month",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 1126672.2454390032,
+        "liquidity": 34783.09236
+      },
+      "end_date": null,
+      "relevance": 0.69,
+      "why_relevant": "Prediction market: Russia nuclear test by...?",
+      "subs": {
+        "relevance": 69,
+        "recency": 100,
+        "engagement": 37
+      },
+      "score": 67
+    },
+    {
+      "id": "PM1",
+      "title": "SpaceX Starship Flight Test 12",
+      "question": "Will the chopsticks catch SpaceX Starship Flight Test 12 Superheavy booster?",
+      "url": "https://polymarket.com/event/spacex-starship-flight-test-12",
+      "outcome_prices": [
+        [
+          "the",
+          0.64
+        ],
+        [
+          "SpaceX",
+          0.63
+        ],
+        [
+          "SpaceX",
+          0.62
+        ]
+      ],
+      "outcomes_remaining": 5,
+      "price_movement": "down 6.0% this month",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 627995.7476529999,
+        "liquidity": 8516.23635
+      },
+      "end_date": "2026-01-31",
+      "relevance": 0.7,
+      "why_relevant": "Prediction market: SpaceX Starship Flight Test 12",
+      "subs": {
+        "relevance": 70,
+        "recency": 100,
+        "engagement": 19
+      },
+      "score": 62
+    },
+    {
+      "id": "PM4",
+      "title": "Iran nuclear test before 2027?",
+      "question": "Iran nuclear test before 2027?",
+      "url": "https://polymarket.com/event/iran-nuclear-test-before-2027",
+      "outcome_prices": [
+        [
+          "Yes",
+          0.115
+        ],
+        [
+          "No",
+          0.885
+        ]
+      ],
+      "outcomes_remaining": 0,
+      "price_movement": "down 4.0% this week",
+      "date": "2026-03-06",
+      "date_confidence": "high",
+      "engagement": {
+        "volume": 58826.522633,
+        "liquidity": 21069.6739
+      },
+      "end_date": "2026-12-31",
+      "relevance": 0.61,
+      "why_relevant": "Prediction market: Iran nuclear test before 2027?",
+      "subs": {
+        "relevance": 61,
+        "recency": 100,
+        "engagement": 0
+      },
+      "score": 52
+    }
+  ],
+  "best_practices": [],
+  "prompt_pack": [],
+  "context_snippet_md": "# Context: test topic (Last 30 Days)\n\n*Generated: 2026-03-06 | Sources: both*\n\n## Key Sources\n\n- [Instagram] Here is a **simple step-by-step way to study for a...\n- [Instagram] Master Your Memory\n\u2022 Test, Don\u2019t Just Read: \nAfter...\n- [Instagram] The real horror isn\u2019t the exam itself. It\u2019s that m...\n- [HN] Launch HN: OctaPulse (YC W26) \u2013 Robotics and compu...\n- [Polymarket] Will Mojtaba Khamenei be the next Supreme Leader o...\n- [Polymarket] US x Iran ceasefire by March 6?...\n- [Polymarket] Will the Iranian regime fall by March 31?...\n\n## Summary\n\n*See full report for best practices, prompt pack, and detailed sources.*\n"
+}
