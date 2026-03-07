@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove entire "Save Research to Documents" section from SKILL.md (~45 lines removed)
 - No more `📎` footer, no Bash heredoc, no `(No output)`, no multi-minute cogitation after research
 
+### Fixed
+
+- Fix skill discovery by using explicit `"skills": ["./skills/"]` path in plugin.json
+
 ## [2.9.3] - 2026-03-06
 
 ### Fixed
