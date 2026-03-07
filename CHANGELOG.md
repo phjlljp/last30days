@@ -27,6 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Save research silently using background Bash heredoc instead of Write tool (eliminates "Wrote N lines..." clutter)
 - Suppress follow-up text after background save completes (no more "Research briefing saved..." noise)
 - Add `📎` footer line for save path instead of verbose confirmation
+- Declare `hooks` field in plugin.json to fix "Hook load failed" error when plugin is installed in other projects
+- Update test assertions to match current model configs (grok-4-1-fast, gpt-4.1 fallback order)
 
 ## [2.9.1] - 2026-03-05
 
