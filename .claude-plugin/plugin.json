@@ -8,5 +8,6 @@
   "repository": "https://github.com/phjlljp/last30days",
   "license": "MIT",
   "keywords": ["research", "reddit", "twitter", "x", "youtube", "tiktok", "instagram", "hackernews", "polymarket", "trends", "prompts"],
-  "skills": ["./"]
+  "skills": ["./"],
+  "hooks": "./hooks/hooks.json"
 }
