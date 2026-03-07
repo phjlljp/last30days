@@ -10,21 +10,27 @@ The skill operates in three modes depending on available API keys: **reddit-only
 
 The orchestrator (`last30days.py`) coordinates discovery, enrichment, normalization, scoring, deduplication, and rendering. Each concern is isolated in `scripts/lib/`:
 
-- **env.py**: Load API keys from `~/.config/last30days/.env` and Codex auth from `~/.codex/auth.json`
+- **env.py**: Load API keys from `.claude/last30days.local.md`, `~/.config/last30days/.env`, or env vars. Codex auth from `~/.codex/auth.json`. Source availability detection.
 - **dates.py**: Date range calculation and confidence scoring
 - **cache.py**: 24-hour TTL caching keyed by topic + date range
 - **http.py**: stdlib-only HTTP client with retry logic
 - **models.py**: Auto-selection of OpenAI/xAI models with 7-day caching
-- **openai_reddit.py**: OpenAI Responses API + web_search for Reddit
+- **reddit.py**: Reddit search via ScrapeCreators API (query expansion, subreddit discovery, comment enrichment)
+- **openai_reddit.py**: OpenAI Responses API + web_search for Reddit (legacy fallback)
 - **xai_x.py**: xAI Responses API + x_search for X
-- **reddit_enrich.py**: Fetch Reddit thread JSON for real engagement metrics
+- **bird_x.py**: X search via bundled GraphQL client (free, cookie-based)
+- **reddit_enrich.py**: Fetch Reddit thread JSON for real engagement metrics and top comments
 - **hackernews.py**: Hacker News search via Algolia API (free, no auth)
 - **polymarket.py**: Polymarket prediction market search via Gamma API (free, no auth)
+- **youtube_yt.py**: YouTube search via yt-dlp with transcript extraction
+- **tiktok.py**: TikTok search via ScrapeCreators API
+- **instagram.py**: Instagram Reels search via ScrapeCreators API
 - **normalize.py**: Convert raw API responses to canonical schema
 - **score.py**: Compute popularity-aware scores (relevance + recency + engagement)
 - **dedupe.py**: Near-duplicate detection via text similarity
 - **render.py**: Generate markdown and JSON outputs
-- **schema.py**: Type definitions and validation
+- **schema.py**: Type definitions and data classes for all 8 source types
+- **ui.py**: Progress display and diagnostic banners
 
 ## Embedding in Other Skills
 

@@ -31,7 +31,7 @@
 - [x] fixtures/models_openai_sample.json
 - [x] fixtures/models_xai_sample.json
 
-## Tests
+## Tests (upstream)
 - [x] tests/test_dates.py
 - [x] tests/test_cache.py
 - [x] tests/test_models.py
@@ -39,6 +39,29 @@
 - [x] tests/test_dedupe.py
 - [x] tests/test_normalize.py
 - [x] tests/test_render.py
+- [x] tests/test_bird_x.py
+- [x] tests/test_codex_auth.py
+- [x] tests/test_cross_source.py
+- [x] tests/test_hackernews.py
+- [x] tests/test_openai_reddit.py
+- [x] tests/test_polymarket.py
+- [x] tests/test_tiktok.py
+- [x] tests/test_youtube_relevance.py
+
+## Tests (custom branch — rebase confidence + coverage)
+- [x] pyproject.toml — pytest config with pythonpath
+- [x] tests/conftest.py — shared fixtures
+- [x] tests/test_env_local_md.py — config loading (load_local_md, env_file, source availability)
+- [x] tests/test_reddit_sc.py — Reddit ScrapeCreators (extract, expand, discover, parse)
+- [x] tests/test_instagram_sc.py — Instagram ScrapeCreators (tokenize, relevance, depth config)
+- [x] tests/test_reddit_enrich.py — comment enrichment (parse, top comments, insights)
+- [x] tests/test_schema_roundtrip.py — data class serialization for all item types
+- [x] tests/test_plugin_structure.py — plugin.json, SKILL.md location, hooks, commands
+- [x] tests/test_smoke.py — end-to-end (--diagnose, --help, --mock)
+- [x] tests/test_render_outputs.py — render edge cases (empty items, xref tags)
+- [x] tests/test_score_edge_cases.py — scoring (log1p, normalize, engagement formulas)
+- [x] tests/test_parallel_search.py — source orchestration (timeout profiles, diagnose)
+- [x] tests/test_snapshot.py — golden-file regression
 
 ## Validation
 - [x] Run tests in mock mode

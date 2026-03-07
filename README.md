@@ -954,6 +954,30 @@ This example shows /last30days discovering **emerging developer workflows** - re
 | `--store` | Persist findings to SQLite database for watchlist/briefing integration |
 | `--diagnose` | Show source availability diagnostics (API keys, Bird, YouTube, web backends) and exit |
 
+## Testing
+
+Run the test suite with pytest:
+
+```bash
+# All unit tests (fast, <2s)
+pytest tests/ -q --ignore=tests/test_smoke.py --ignore=tests/test_snapshot.py
+
+# Full suite including smoke + snapshot (~2min, runs --mock pipeline)
+pytest tests/ -q
+
+# After a rebase — run the seam tests that cover conflict-prone files
+pytest tests/ -k "env_local_md or reddit_sc or instagram_sc or plugin_structure or schema_roundtrip" -v
+
+# Update snapshot golden file after intentional output changes
+UPDATE_SNAPSHOTS=1 pytest tests/test_snapshot.py -v
+```
+
+The test suite covers:
+- **Seam tests** (A) — config loading, Reddit/Instagram ScrapeCreators, comment enrichment, schema serialization, plugin structure integrity
+- **Pipeline tests** (B) — render output edge cases, scoring formulas, source orchestration
+- **Smoke tests** — `--diagnose`, `--help`, `--mock` end-to-end via subprocess
+- **Snapshot regression** (C) — golden-file diff catches unexpected output changes after rebases
+
 ## Requirements
 
 - **OpenAI API key** - For Reddit research (uses web search via Responses API)
