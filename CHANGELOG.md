@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Critical:** Switch save from `run_in_background` to foreground Bash - background callbacks caused model to re-engage, hallucinate fake user messages, and generate unsolicited multi-paragraph responses
 - Save uses foreground `cat >` heredoc (executes sub-second, no callback, no delayed notification)
+- Fix plugin hook loading by using auto-discovered `hooks/hooks.json` format with `{ "hooks": { ... } }` wrapper
+- Remove invalid `hooks` string path from plugin.json (Claude Code auto-discovers hooks/hooks.json)
+- Use `${CLAUDE_PLUGIN_ROOT}` variable syntax in hook commands
 
 ## [2.9.2] - 2026-03-06
 
